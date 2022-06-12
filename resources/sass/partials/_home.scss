@@ -92,8 +92,7 @@ main {
             color: $text_white;
         }
         > .row {
-            justify-content: space-between;
-            column-gap: 20px;
+            column-gap: 100px;
             row-gap: 20px;
             display: flex;
             flex-wrap: wrap;
@@ -101,8 +100,8 @@ main {
             z-index: 9999;
             > .comic {
                 color: $text_white;
-                max-width: 191px;
-                width: 100% / 6;
+                max-width: 190px;
+                width: calc((100% - 500px) / 6)
             }
         }
     }

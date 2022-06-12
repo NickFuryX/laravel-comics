@@ -111,9 +111,8 @@ main > .container > .load-more {
   color: white;
 }
 main > .container > .row {
-  justify-content: space-between;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
   row-gap: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -122,8 +121,8 @@ main > .container > .row {
 }
 main > .container > .row > .comic {
   color: white;
-  max-width: 191px;
-  width: 100%/6;
+  max-width: 190px;
+  width: calc((100% - 500px) / 6);
 }
 main .container:nth-child(2) {
   background-color: #0282f9;
@@ -230,7 +229,7 @@ footer > .footer-down > .row > div > img {
 section {
   background-color: white;
 }
-section > .line {
+section > > .line {
   height: 50px;
   width: 100%;
   background-color: #0282f9;
@@ -316,11 +315,9 @@ section .container .row > .col-dx {
   width: 25%;
 }
 section .container .row > .col-dx img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
   -o-object-position: top;
      object-position: top;
 }

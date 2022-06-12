@@ -36,7 +36,8 @@
                 </div>
             </div>
             <div class="col-dx">
-                <img src="{{$comics[$key]['thumb']}}" alt="">
+                <h3>ADVERTISE</h3>
+                <img src="../../images/adv.jpg" alt="">
             </div>
         </div>
     </div>

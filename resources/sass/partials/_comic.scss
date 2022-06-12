@@ -1,4 +1,5 @@
 section {
+    >
     > .line {
         height: 50px;
         width: 100%;
@@ -86,10 +87,9 @@ section {
             > .col-dx {
                 width: 25%;
                 img {
-                    width: 200px;
-                    height: 200px;
-                    border-radius: 50%;
-                    object-fit: cover;
+                    width: 250px;
+                    
+                    object-fit: contain;
                     object-position: top;
                 }
             }
@@ -175,3 +175,4 @@ section {
         }
     }
 }
+

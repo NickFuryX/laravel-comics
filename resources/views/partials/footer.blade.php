@@ -51,9 +51,11 @@
                     </li>
                 </ul>
                </div>
+               
             </div>
             <img class="logo-bg" src="../images/dc-logo-bg.png" alt="">
         </div>
+
     </div>
     <div class="footer-down">
         <div class="row">
