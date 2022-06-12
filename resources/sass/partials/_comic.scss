@@ -1,0 +1,177 @@
+section {
+    > .line {
+        height: 50px;
+        width: 100%;
+        background-color: $main_color;
+    }
+    background-color: $text_white;
+    > .comic-container {
+        width: 80%;
+        margin: auto;
+        height: 10px;
+
+        > .comic {
+            position: relative;
+            top: -225px;
+            border: 1px solid $text_white;
+            color: $text_white;
+            width: 125px;
+            > img {
+                width: 100%;
+            }
+            > p {
+                padding: 5px;
+                font-size: 0.8em;
+                background-color: $main_color;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+    }
+
+    .container{
+        padding: 50px 0;
+        .row {
+            display: flex;
+            justify-content: space-between;
+            > .col-sx {
+                width: 70%;
+                > h1 {
+                    padding-bottom: 20px;
+                    font-size: 1.5em;
+                    text-transform: uppercase;
+                }
+                >.price{
+                    border-bottom: 3px solid $dark_green;
+                    height: 40px;
+                    display: flex;
+                    background-color: $bg_price_bar;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: $text_white;
+                   
+                    >div>p{
+                        padding-left: 30px;
+                        span{
+                        color:$light_green;
+                    }
+                    }
+                    >div:nth-child(2){
+                            height: 100%;
+                            display: flex;
+                        >div{
+                            display: flex;
+                            align-items: center;
+                            border-right: 5px solid $dark_green;
+                            >p:nth-child(1){
+                                color: $light_green; 
+                                padding: 0 20px;
+                            }
+                            >span{
+                                  padding: 0 20px;
+                                }
+                        }
+                    }
+                }
+                 >div:last-child{
+                        >p{
+                            padding-top: 30px;
+                            font-size: 0.9em;
+                            font-weight: 600;
+                            color: $secondary_text;
+                            line-height: 1.5;
+                        }
+                    }
+            }
+            > .col-dx {
+                width: 25%;
+                img {
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    object-position: top;
+                }
+            }
+        }
+        width: 80%;
+        margin: auto;
+    }
+    > .container:nth-child(4) {
+        background-color: $bg_comics;
+        width: 100%;
+        border-top: 2px solid $border;
+        padding-bottom: 75px;
+
+        > .row {
+            padding: 20px 0;
+            margin: auto;
+            width: 80%;
+            height: 250px;
+            display: flex;
+            justify-content: space-between;
+            > .col-sx,
+                .col-dx {
+                >h2{
+                border-bottom: 2px solid $border;
+                font-size: 1.2em;
+                color: $titles;
+                padding-bottom: 10px;
+                }
+                width: 48%;
+                >.row{
+                    padding: 20px 0;
+                    border-bottom: 2px solid $border;
+                    display: flex;
+                  
+                  >.inner-sx-col{
+                    font-size: 0.8em;
+                    text-decoration: none;
+                    color: $titles;
+                    width: 30%;
+                    font-weight: bold;
+                }  
+                >.inner-dx-col{
+                    font-size: 0.8em;
+                    width: 70%;
+                    >a{
+                    text-decoration: none;
+                    color: $main_color;
+                    }
+
+
+                }
+                }
+            }
+        }
+    }
+    .container:last-child {
+        background-color: $main_color;
+        width: 100%;
+        > .row {
+            justify-content: space-between;
+            column-gap: 20px;
+            row-gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 9999;
+            margin: auto;
+            width: 80%;
+            > .card-container {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                > img {
+                    height: 100px;
+                    padding: 30px 10px;
+                }
+                > p {
+                    text-transform: uppercase;
+                    color: $text_white;
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+}

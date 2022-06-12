@@ -1,61 +1,75 @@
-{{-- richiamo da config l'array della navbar --}}
-@php
-    $navbar = config('navbar-items');
-@endphp
-
-<div class="footer-container">
-    <div class="footer-nav">
-        <ul>
-            <li><h3>DC COMICS</h3></li>
-            {{-- foreach per gli elementi della navbar che sono ripetuti nel footer --}}
-            @foreach($navbar as $key => $item)
-            <li> <a href="{{route($key)}}"> {{$item}} </a></li>
-            @endforeach
-            
-            <li><h3>SHOP</h3></li>
-            <li> <a href="#"> Shop DC </a></li>
-            <li> <a href="#"> Shop DC Collectibles </a></li>
-        </ul>
-        <ul>
-            <li><h3>DC</h3></li>
-            <li> <a href="#"> Terms of Use </a></li>
-            <li> <a href="#"> Privacy Policy </a></li>
-            <li> <a href="#"> Ad Choices </a></li>
-            <li> <a href="#"> Advertising </a></li>
-            <li> <a href="#"> Jobs </a></li>
-            <li> <a href="#"> Subscriptions </a></li>
-            <li> <a href="#"> Talent Workshops </a></li>
-            <li> <a href="#"> CPSC Certificates </a></li>
-            <li> <a href="#"> Ratings </a></li>
-            <li> <a href="#"> Shop Help </a></li>
-            <li> <a href="#"> Contact Us </a></li>
-        </ul>
-        <ul>
-            <li><h3>SITES</h3></li>
-            <li> <a href="#"> DC </a></li>
-            <li> <a href="#"> MAD Magazine </a></li>
-            <li> <a href="#"> DC Kid </a></li>
-            <li> <a href="#"> DC Universe </a></li>
-            <li> <a href="#"> DC Power Visa </a></li>
-        </ul>
-    </div>
-    <div class="logo-img">
-        <img src={{"/img/dc-logo-bg.png"}} alt="">
-    </div>
-</div>
-
-<section class="social-bg">
-    <div class="footer-social">
-        <div>
-            <button>SIGN-UP NOW</button>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="link-container">
+                <div>
+                   <ul>
+                    <h4>dc comics</h4>
+                    <li><a href="">characters</a></li>
+                    <li><a href="">comics</a></li>
+                    <li><a href="">movies</a></li>
+                    <li><a href="">tv</a></li>
+                    <li><a href="">games</a></li>
+                    <li><a href="">videos</a></li>
+                    <li><a href="">news</a></li>
+                </ul>
+                <ul>
+                    <h4>shop</h4>
+                    <li><a href="">Shop DC</a></li>
+                    <li><a href="">Shop Dc Collectibles</a>
+                    </li>
+                </ul>  
+                </div>
+               <div>
+                 <ul>
+                    <h4>dc</h4>
+                    <li><a href="">Terms Of use</a></li>
+                    <li><a href="">Privacy policy (new)</a></li>
+                    <li><a href="">Ad Choices</a></li>
+                    <li><a href="">Advertising</a></li>
+                    <li><a href="">Jobs</a></li>
+                    <li><a href="">Subscriptions</a></li>
+                    <li><a href="">Talent Workshops</a></li>
+                    <li><a href="">CPSC Certificates</a></li>
+                    <li><a href="">Ratings</a></li>
+                    <li><a href="">Shop Help</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                 
+               </div>
+               <div>
+                 <ul>
+                    <h4>sites</h4>
+                    <li><a href="">DC</a></li>
+                    <li><a href="">MAD Magazines</a>
+                    </li>
+                     <li><a href="">DC Kids</a>
+                    </li>
+                     <li><a href="">DC Universe</a>
+                    </li>
+                     <li><a href="">DC Power Visa</a>
+                    </li>
+                </ul>
+               </div>
+            </div>
+            <img class="logo-bg" src="../images/dc-logo-bg.png" alt="">
         </div>
-        <div class="social-icons">
-            <div>FOLLOW US</div>
-            <img src="/img/footer-facebook.png" alt="">
-            <img src="/img/footer-twitter.png" alt="">
-            <img src="/img/footer-youtube.png" alt="">
-            <img src="/img/footer-pinterest.png" alt="">
-            <img src="/img/footer-periscope.png" alt="">
-        </div> 
     </div>
-</section>
+    <div class="footer-down">
+        <div class="row">
+            <button>
+                sign-up now!
+            </button>
+            <div>
+                <span>follow us</span>
+                <img src="../images/footer-facebook.png" alt="">
+                 <img src="../images/footer-twitter.png" alt="">
+                  <img src="../images/footer-youtube.png" alt="">
+                   <img src="../images/footer-pinterest.png" alt="">
+                    <img src="../images/footer-periscope.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+
