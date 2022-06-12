@@ -1,1 +1,18 @@
-//
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+@import "./partials/header";
+@import "./partials/jumbo";
+@import "./partials/main";
+@import "./partials/comics";
+@import "./partials/footer";
+@import "./partials/social";
+@import "./partials/comic-details";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
